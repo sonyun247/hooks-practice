@@ -1,8 +1,12 @@
 import React from "react";
+import Home from "./Home";
+import UserContextProvider from "./Context";
 
 function App() {
   return (
-    <div className="App" />
+    <UserContextProvider>
+      <Home />
+    </UserContextProvider>
   );
 }
 
